@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/ui/Header';
 import CharacterGrid from './components/Characters/CharacterGrid';
 import Search from './components/ui/Search';
+import UploadForm from './components/UploadForm';
 
 const App = () => {
   const[items, setItems] = useState([])
@@ -27,6 +28,7 @@ const App = () => {
       <Header/>
       <Search getQuery={(q) => setQuery(q)}/>
       <CharacterGrid items={items} isLoading={isLoading}/>
+      <UploadForm/>
     </div>
   );
 }
